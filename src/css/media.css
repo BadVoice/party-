@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+    .header__nav__list {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .header__nav__logo  {
+        flex-direction: column;
+    }
+
+    .portfolio__container {
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .portfolio {
+        min-height: 250px;
+        min-width: 250px;
+      }
+    
+  }
