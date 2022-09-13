@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/media.css">
+    <link rel="stylesheet" href="./index.js">
     
     <title>Document</title>
 </head>
@@ -14,49 +13,88 @@
     
 
         <header class="header">
-            <div class="header__nav ">
-                <ul class="header__nav__list container">
-                    <li class="header__nav__item">
-                        <a class="header__link" href="#">About</a>
-                    </li>
-                    
-                    <li class="header__nav__item">
-                        <a class="header__link" href="#">About</a>
-                    </li>
+                <div class="header__nav">
+                    <div class="container">
+                            
+                        <div class="header__logo">
+                            <!-- <img class="header__logo__img" src="./src/images/" alt="photo"> -->
+                            <h3 class="header__logo__img">LogoLogo</h3>
 
-                    <li class="header__nav__item">
-                        <a class="header__link" href="#">About</a>
-                    </li>
-
-                    <li class="header__nav__item">
-                        <a class="header__link" href="#">About</a>
-                    </li>
-
-                    <li class="header__nav__item">
-                        <a class="header__link" href="#">About</a>
-                    </li>
-                    
-                
-            </div>
-
-
-
-            <div class="header__about">
-                    <div class="header__nav__logo container">
-                       <div class="portfolio__container">
-                        <img class="portfolio" src="./src/images/mari.jpg" width="100px" alt="fdhdfh">
-                       </div>
-                        <div class="header__nav__descr">
-                            <p class="">
-                               text text text    text text text  text text text  text text text  text text text  text text text  text text text  text text text  text text text  text text text 
-                            </p>
+                            <div class="header__logo__title">
+                                LogoText
+                            </div>
                         </div>
-                    </div>
-    
-                    
+                   
+                        <ul class="header__nav__list">
+                            <li class="header__nav__item">
+                                <a class="header__link" href="#">About</a>
+                            </li>
+                            
+                            <li class="header__nav__item">
+                                <a class="header__link" href="#">About</a>
+                            </li>
+        
+                            <li class="header__nav__item">
+                                <a class="header__link" href="#">About</a>
+                            </li>
+        
+                            <li class="header__nav__item">
+                                <a class="header__link" href="#">About</a>
+                            </li>
+        
+                            <li class="header__nav__item">
+                                <a class="header__link" href="#">About</a>
+                            </li>
+
+                            </ul>
+
+
+                            <div class="mobile__nav__close">
+                                <p class="mobile__nav__close__icon">X</p>
+                            </div>
                 </div>
-                
+
+
         </header>
+
+        <div class="mobile__nav">
+            <ul class="mobile__nav__list">
+                <li class="mobile__nav__item">
+                    <a class="mobile__link" href="#">About</a>
+                </li>
+                
+                <li class="mobile__nav__item">
+                    <a class="mobile__link" href="#">About</a>
+                </li>
+
+                <li class="mobile__nav__item">
+                    <a class="mobile__link" href="#">About</a>
+                </li>
+
+                <li class="mobile__nav__item">
+                    <a class="mobile__link" href="#">About</a>
+                </li>
+
+                <li class="mobile__nav__item">
+                    <a class="mobile__link" href="#">About</a>
+                </li>
+        </div>
+
    
 </body>
+
+<script>
+    const btnBurgerMenu = document.querySelector('.mobile__nav__close__icon')
+    const burgerMenu = document.querySelector('.mobile__nav')
+
+    btnBurgerMenu.addEventListener('click', (e) => {
+
+    burgerMenu.classList.toggle('menu--visible')
+   
+    console.log('click')
+
+})
+
+
+</script>
 </html>

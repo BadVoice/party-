@@ -1,10 +1,6 @@
-@media screen and (max-width: 600px) {
-    .header__nav__list {
-        display: none;
-    }
-  }
 
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 850px) {
     .header__nav__logo  {
         flex-direction: column;
     }
@@ -17,6 +13,28 @@
     .portfolio {
         min-height: 250px;
         min-width: 250px;
+      }
+
+      .header__nav__list {
+        display: none;
+      }
+
+      .mobile__nav__close {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu--visible {
+        display: flex;
+      }
+
+      .menu--overlay {
+        display: none;
+      }
+
+      .container {
+        justify-content: space-between;
+        align-items: center;
       }
     
   }
